@@ -63,6 +63,92 @@
 
     @media(max-width:920px){.pdpgrid,.grid2{grid-template-columns:1fr;gap:25px}.gallery{position:static}.hdrtrust{display:none}.reviews,.cards3,.steps{grid-template-columns:1fr}.photo img{height:auto}.pdp{padding-top:18px}.thumbs{display:flex;overflow-x:auto;gap:8px;padding-bottom:5px}.thumb{min-width:74px;width:74px;height:74px;flex:0 0 74px}.sticky{display:block}.section{padding:52px 0}.pdpgrid{gap:18px}.mainimg{border-radius:18px}.price{font-size:38px}}
     @media(max-width:520px){.wrap{padding:0 13px}.hdr{height:54px}.brand{font-size:18px}.hdrcta{font-size:12px;padding:9px 12px}.title{font-size:29px}.row2{grid-template-columns:1fr}.truststrip{grid-template-columns:1fr}.offer{grid-template-columns:auto 1fr}.offerprice{grid-column:2;text-align:right}.pdp{padding-bottom:38px}.cards3{gap:12px}.formbody{padding:18px}.urgency{font-size:12px}.subtitle,.lead{font-size:15.5px}}
+
+
+    /* ═════ MOBILE POLISH FIX v2 ═════ */
+    *{max-width:100%}
+    .info,.gallery,.pdpgrid,.wrap,.section,.pdp{min-width:0}
+    @media(max-width:720px){
+      body{font-size:15px;line-height:1.65}
+      .wrap{width:100%;padding-left:12px;padding-right:12px}
+      .urgency{padding:7px 8px;font-size:11.5px;line-height:1.35}
+      .urgency .inner{gap:6px}
+      .unit{min-width:26px;padding:1px 6px}
+      .stockpill{padding:1px 8px;font-size:11px}
+      header{position:sticky;top:0}
+      .hdr{height:50px;gap:8px}
+      .brand{font-size:17px;white-space:nowrap;min-width:0}
+      .brand span{font-size:8px;padding:2px 7px}
+      .hdrcta{font-size:11.5px;padding:8px 10px;white-space:nowrap;box-shadow:none}
+
+      .pdp{padding-top:12px;padding-bottom:28px}
+      .pdpgrid{display:flex;flex-direction:column;gap:14px}
+      .gallery{width:100%}
+      .mainimg{width:100%;border-radius:16px;aspect-ratio:1/1;box-shadow:0 10px 28px rgba(109,40,217,.10)}
+      .mainimg img{padding:10px;object-fit:contain}
+      .badge-stock{top:9px;right:9px;font-size:10.5px;padding:4px 9px}
+      .thumbs{display:flex;overflow-x:auto;gap:7px;margin-top:8px;padding:0 0 6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+      .thumb{min-width:62px;width:62px;height:62px;flex:0 0 62px;border-radius:9px;scroll-snap-align:start}
+      .thumb img{object-fit:cover}
+
+      .kicker{font-size:10.5px;margin-top:2px}
+      .title{font-size:24px;line-height:1.22;margin-bottom:7px;letter-spacing:-.2px}
+      .subtitle{font-size:14.5px;line-height:1.72;margin-bottom:10px}
+      .rating{margin-bottom:10px;padding-bottom:10px;gap:6px;flex-wrap:wrap}
+      .stars{font-size:13px}.rating span:last-child{font-size:11.5px}
+
+      .pricebox{padding:12px;border-radius:14px;margin-bottom:10px}
+      .old{font-size:12px}
+      .price-row{gap:8px;align-items:center}
+      .price{font-size:32px;white-space:nowrap}
+      .save{font-size:10.5px;padding:4px 8px}
+      .perbox{font-size:12.2px;line-height:1.45}
+      .viewers{font-size:12px;margin-bottom:10px}
+
+      .label{margin:7px 0 7px;font-size:14px}
+      .offers{gap:8px;margin-bottom:11px}
+      .offer{grid-template-columns:22px 1fr;gap:9px;padding:11px 10px;border-radius:13px;align-items:start}
+      .offer h3{font-size:13.5px;line-height:1.35;padding-left:2px}
+      .offer p{font-size:11.5px;line-height:1.45}
+      .offerprice{grid-column:2;text-align:right;font-size:15px;margin-top:2px;line-height:1.25}
+      .offerprice small{font-size:10px}
+      .radio{width:19px;height:19px;margin-top:2px}
+      .offer.on .radio::after{width:9px;height:9px}
+      .pop{top:-8px;right:34px;font-size:9px;padding:2px 9px}
+      .best{border-width:2px}
+
+      .bullets{margin:11px 0;padding:9px 0}
+      .bullets li{font-size:12.8px;line-height:1.55;padding:3px 0}
+      .form{gap:8px}
+      .row2{grid-template-columns:1fr;gap:8px}
+      .form input,.form select{font-size:16px;padding:12px;border-radius:10px;min-height:46px}
+      .btn{font-size:15.5px;padding:14px 16px;margin-top:2px;box-shadow:0 6px 18px rgba(249,115,22,.28)}
+      .truststrip{grid-template-columns:1fr 1fr;gap:6px;margin:9px 0}
+      .trustitem{font-size:10.8px;padding:8px 7px;border-radius:9px;line-height:1.35;text-align:center}
+      .note{font-size:12px;padding:10px;border-radius:10px}
+
+      .trustbar{padding:12px 0}
+      .trustbar .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:center}
+      .num{font-size:18px}.numlbl{font-size:10.5px}
+      .section{padding:42px 0}
+      .grid2{gap:20px}
+      .h2{font-size:24px;line-height:1.25}
+      .lead{font-size:14.5px;line-height:1.75}
+      .photo{border-radius:16px}.photo img{height:auto;max-height:360px;object-fit:cover}
+      .cards3,.reviews,.steps{grid-template-columns:1fr;gap:12px;margin-top:22px}
+      .card,.review,.step{border-radius:16px;padding:16px 14px;transform:none!important}
+      .ba{border-radius:16px;margin-top:20px}
+      .bottomform{border-radius:18px;margin-top:22px}
+      .formbody{padding:14px}
+      .sticky{font-size:13.5px;padding:12px 12px}
+      footer{padding-bottom:66px}
+    }
+
+    @media(max-width:380px){
+      .title{font-size:22px}.price{font-size:29px}.hdrcta{font-size:10.8px;padding:7px 8px}.brand{font-size:15.5px}
+      .thumb{min-width:58px;width:58px;height:58px}.truststrip{grid-template-columns:1fr}
+    }
+
   </style>
 </head>
 <body>
